@@ -583,7 +583,7 @@ body {
 
 
 
-    width:400px;
+    width:800px;
 
 
     background:
@@ -922,4 +922,38 @@ body {
 
     color:#bde7ff;
 
+}
+
+/* ===============================
+   Special Thanks Columns
+   =============================== */
+
+.thanks-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.thanks-left,
+.thanks-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thanks-left a,
+.thanks-right a {
+    display: block;
+    margin-top: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    background: rgba(255,255,255,.15);
+}
+
+.thanks-left a:hover,
+.thanks-right a:hover {
+    background: rgba(255,255,255,.35);
 }
